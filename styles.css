@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  display: flex;
+  justify-content: center;
+}
+body {
+  background-color: deepskyblue;
+}
+.map-div {
+  width: 100%;
+  margin: auto;
+}
+.map-div path {
+  fill: #7c7c7c;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+svg {
+  width: 90%;
+  height: 500px;
+}
+.map-div path:hover {
+  fill: rgb(204, 61, 61);
+  transition: fill 0.7s;
+}
+
+.hidden {
+  display: none;
+}
