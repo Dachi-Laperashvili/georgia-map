@@ -3,19 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
+body {
   display: flex;
   justify-content: center;
-}
-body {
-  background-color: deepskyblue;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
 }
 .map-div {
-  width: 100%;
   margin: auto;
 }
 .map-div path {
-  fill: #7c7c7c;
+  fill: #a10b0b;
   stroke: #ffffff;
   stroke-width: 2px;
   stroke-linecap: round;
@@ -26,10 +25,28 @@ svg {
   height: 500px;
 }
 .map-div path:hover {
-  fill: rgb(204, 61, 61);
+  fill: #535353;
   transition: fill 0.7s;
 }
-
+.content {
+  position: absolute;
+  max-width: 600px;
+  max-height: 600px;
+  overflow-y: scroll;
+  padding: 50px;
+  text-align: center;
+  background-color: #9f0004;
+  border-radius: 5%;
+  color: white;
+}
+.description {
+  font-size: 20px;
+}
+.region-image,
+.region-image1 {
+  width: 100%;
+  height: auto;
+}
 .hidden {
   display: none;
 }
