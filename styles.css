@@ -77,14 +77,11 @@ svg {
   }
   .content {
     margin: 1rem;
-    height: 500px;
+    height: 80%;
   }
-  .back-div {
-    position: absolute;
-    right: 38%;
-    bottom: 0;
-    padding-right: 100%;
-    padding-left: 100%;
+  #back-btn {
+    left: 30%;
+    width: 40%;
   }
 }
 
@@ -92,6 +89,5 @@ svg {
   .content {
     margin: 1rem;
     padding: 1rem;
-    height: 500px;
   }
 }
