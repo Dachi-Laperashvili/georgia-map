@@ -15,7 +15,7 @@
 
 ### Useful resources
 
-- [getAttribute()] - this helped me to get values for each region by title attribute
+- [attr()] - this helped me to get values for each region by title attribute
 
 ## Author
 
