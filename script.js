@@ -94,27 +94,37 @@ const image1 = document.querySelector('.region-image1');
 const descrEl = document.querySelector('.description');
 const backBtn = document.getElementById('back-btn');
 
+// looping throught svg pathes
 for (let i = 0; i < path.length; i++) {
+  // adding click functionality to selected element of path
   path[i].addEventListener('click', function () {
+    // looping through svg pathes again to remove other pathes from screen
     for (let j = 0; j < path.length; j++) {
+      // hiding other pathes
       path[j].classList.add('hidden');
+      // getting title attribute from selected path
       const attr = path[i].getAttribute('title');
 
+      // changing content of text accordingly to region object title and description of same name
       titleEl.textContent = regions[attr].title;
       descrEl.textContent = regions[attr].description;
 
+      // changing images and alternate names accordingly to region
       image.src = regions[attr].image;
       image1.src = regions[attr].image1;
       image.alt = regions[attr].title;
       image1.alt = regions[attr].title;
     }
+    // hiding selected element and showing information and back-to-map button
     path[i].classList.add('hidden');
     text.classList.remove('hidden');
     backBtn.classList.remove('hidden');
   });
 }
 
+// giving functionality to back button when clicking
 backBtn.addEventListener('click', function () {
+  // showing map and hiding text and back button
   text.classList.add('hidden');
   path.forEach(el => el.classList.remove('hidden'));
   backBtn.classList.add('hidden');
