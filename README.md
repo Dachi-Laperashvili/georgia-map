@@ -9,7 +9,7 @@
 
 ### Built with
 
-- JavaScript
+- JavaScript/jQuery
 - CSS
 - HTML
 
