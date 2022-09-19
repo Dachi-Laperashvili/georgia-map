@@ -95,7 +95,8 @@ $(function () {
     $(this).on('click', function () {
       // hiding map
       $('path').hide();
-
+      
+      // selecting and defining title attribute
       const titleAttr = $(this).attr('title');
 
       // changing text according to object of same name as region
